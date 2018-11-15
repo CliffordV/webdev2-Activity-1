@@ -1,4 +1,4 @@
-# Web Development
+# Web Development 2
 Activity #1
 
 ### CGI Python
