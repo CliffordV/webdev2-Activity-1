@@ -1,1 +1,2 @@
-# webdev2-Activity-1
+# Web Development Activity #1
+Created at August 19, 2017
