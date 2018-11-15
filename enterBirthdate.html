@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="zodiac-images.png">
+		<title>Zodiac</title>
+		<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				text-align: center;
+				margin: 0 auto;
+				font-family: helvetica;
+				background-image: url("background.png");
+				background-size: 1366px 690px;
+				background-repeat: no-repeat;
+			}
+			input {
+				border: 0;
+				padding: 10px;
+				font-size: 16px;
+				font-family: helvetica;
+				width: 500px;
+			}
+			input[type="submit"] {
+				background: rgba(0,0,0,0.7);
+				color: white;
+				margin-top: 30px;
+				width: 200px;
+			}
+			input[type="submit"]:hover {
+				background: rgba(0,0,0,0.8);
+			}
+			img {
+				margin: 50px auto -50px auto;
+				width: 20%;
+				height: 20%;
+			}
+			input {
+				background-color: rgba(185,176,1,0.1);
+				color: rgba(185, 176, 1, 1);
+				}
+			h1 {
+				font-family: 'Bangers', Georgia, Serif;
+				font-size: 4em;
+				text-shadow: 2px 2px black;
+				color: rgba(255, 0, 0, 0.7);
+			}
+		</style>
+	</head>
+
+	<body>
+		<img src="zodiac-images.png">
+		<br/><br/><h1>KNOW YOUR ZODIAC SIGN</h1>
+		<form action="displayzodiac.cgi" name="sampleform" method="POST">
+			<input type="number" min = "1" max= "12" style= "width: 100px;" name="month" placeholder="Month" required=required autofocus>
+			<input type="number" min="1" max="31" style= "width: 50px;" name="day" placeholder="Day" required=required autofocus>
+			<input type="number" min="1900" max="2100" style= "width: 70px;" name="year" placeholder="Year" required=required autofocus><br/><br/>
+			<input type="submit" name="submit" value="Submit"><br/><br/><br/><br/>
+		</form>
+	</body>
+</html>  
